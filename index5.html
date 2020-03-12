@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 style="color:rgb(135, 135, 151)">call by Value and call by Reference</h1>
+    <script>
+
+var obj={id:1,name:"venkat"}
+obj.location="hyderabad"
+console.log(obj)
+
+
+
+        ///////call by value///////
+
+let original=10;
+function updateOriginal(originalValue){
+    originalValue+=10;
+    console.log(originalValue);
+}
+updateOriginal(original);
+console.log(original);
+
+
+         //////call by Reference////////
+
+var obj3={name:"venkat",value:30}
+function updateOriginal(originalValue){
+    originalValue.value=50;
+
+}
+updateOriginal(obj3);
+console.log(obj3);
+
+
+    </script>
+</body>
+</html>
